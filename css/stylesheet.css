@@ -1,5 +1,4 @@
 html{
-    /* min-width: 700px; */
     scroll-behavior: smooth;
 }
 
@@ -7,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 
 #background{
     background-image: url("https://image.freepik.com/free-photo/white-marble-texture-pattern-with-high-resolution_38679-826.jpg");
@@ -26,11 +26,10 @@ nav .cover{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center left;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     padding-bottom: 40px;
-    margin-left: -10px;
-    
     
 }
 
@@ -73,6 +72,14 @@ nav .cover .left .button{
     justify-content: center;
 
 }
+nav .cover .left .button a:link{
+    text-decoration: none;
+    color:#FFA535;
+}
+nav .cover .left .button a:visited{
+    text-decoration: none;
+    color: #FFA535;
+}
 nav .cover .left .button:hover{
     background-color:#706363;  
     /* change this later ...........................*/
@@ -85,6 +92,7 @@ nav .cover .right{
     flex: 1.6;
     align-items: center;
     justify-content: center;
+   
 }
 nav .cover .right .circle {
     height: 250px;
@@ -303,4 +311,9 @@ nav .tab .divider{
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
+}
+
+#contact .icon_box .icon p a{
+    color: #707070;
+    text-decoration: none;
 }
