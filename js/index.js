@@ -1,3 +1,10 @@
+function pageScrollTo(destId) {
+    const duration = 500
+    var dest = $(`#${destId}`)[0];
+    var to = dest.offsetTop 
+    $('html, body').animate({scrollTop: to}, duration)
+}
+
 var current_tab = 0
 // display default tab
 onTabPress(current_tab)
