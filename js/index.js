@@ -71,3 +71,43 @@ function hideAllTabs() {
         "display": "none"
     })
 }
+
+$(window).on('load', function(){
+    let url = "https://www.instagram.com/_whitebunni__/?__a=1"
+    let id = "9864203919"
+
+    function addIGPhotos(nodes) {
+        let frameBoxEl = $('.framebox')
+        for (let node of nodes) {
+            let url = node.node.display_url
+            frameBoxEl.prepend(`
+                <div class="row">
+                    <div class="media">
+                        <img src="${url}" alt=".">
+                    </div>
+                </div>
+            `)
+        }
+    }
+
+    $.get(url, function(data) {
+        let mediaEdge = data.graphql.user.edge_owner_to_timeline_media
+        addIGPhotos(mediaEdge.edges)
+        let end_cursor = mediaEdge.page_info.end_cursor
+        if (mediaEdge.page_info.has_next_page) {
+            let url = "https://www.instagram.com/graphql/query/";
+            let variables = encodeURIComponent('{"id":"' + id + '","first":100,"after":"' + end_cursor + '"}');
+            url = url + "?query_hash=472f257a40c653c64c666ce877d59d2b&query_id=17888483320059182&variables=" + variables;
+            let options = {
+                url: url,
+                headers: {
+                    Cookie: "Cookie value which i copied from my logged in instagram browser window"
+                }
+            };
+            $.get(url, options).done(function(result){
+                let imageNodes = result.data.user.edge_owner_to_timeline_media.edges
+                addIGPhotos(imageNodes)
+            })
+        }
+    })
+});
