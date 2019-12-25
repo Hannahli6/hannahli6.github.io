@@ -28,9 +28,9 @@ var photos = [
     },
 ]
 
-displayAllImages()
+displayLocalImages()
 
-function displayAllImages() {
+function displayLocalImages() {
     for (var i = 0; i < photos.length; i++) {
         var photo = photos[i]
         // Create a <div class="media"><img scr="/images/" + campfire.jpg /></div>
@@ -73,7 +73,7 @@ function hideAllTabs() {
 }
 
 $(window).on('load', function(){
-    let url = "https://www.instagram.com/_whitebunni__/?__a=1"
+    let url = "https://www.instagram.com/hiuuya_/?__a=1"
     let id = "9864203919"
 
     function addIGPhotos(nodes) {
@@ -91,8 +91,9 @@ $(window).on('load', function(){
     }
 
     $.get(url, function(data) {
+        let images = []
         let mediaEdge = data.graphql.user.edge_owner_to_timeline_media
-        addIGPhotos(mediaEdge.edges)
+        images = [...mediaEdge.edges.reverse(), ...images]
         let end_cursor = mediaEdge.page_info.end_cursor
         if (mediaEdge.page_info.has_next_page) {
             let url = "https://www.instagram.com/graphql/query/";
@@ -106,8 +107,11 @@ $(window).on('load', function(){
             };
             $.get(url, options).done(function(result){
                 let imageNodes = result.data.user.edge_owner_to_timeline_media.edges
-                addIGPhotos(imageNodes)
+                images = [...imageNodes.reverse(), ...images]
+                addIGPhotos(images)
             })
+        } else {
+            addIGPhotos(images)
         }
     })
 });
