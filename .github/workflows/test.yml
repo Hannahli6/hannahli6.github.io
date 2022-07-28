@@ -2,19 +2,21 @@ name: test
 
 on:
   pull_request:
-    branches: [ "master" ]
-
+    types: [opened]
+  issue_comment:
+    types: [created]
+  
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v3
+    - uses: khan/pull-request-comment-trigger@v1.1.0
+      id: check
+      with:
+          trigger: 'testing'
+          reaction: rocket
     - run: curl "https://dog.ceo/api/breeds/image/random"
+    - run: 'echo Testing'
+      if: steps.check.outputs.triggered == 'true'
 
