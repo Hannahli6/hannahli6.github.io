@@ -15,7 +15,6 @@ jobs:
       id: check
       with:
           trigger: 'testing'
-          reaction: rocket
     - run: curl "https://dog.ceo/api/breeds/image/random"
     - run: 'echo Testing'
       if: steps.check.outputs.triggered == 'true'
