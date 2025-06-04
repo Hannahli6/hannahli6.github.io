@@ -47,3 +47,11 @@
     width: 30%;
     text-align: center;
 }
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    align-items: start;
+}

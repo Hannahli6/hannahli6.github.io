@@ -1,11 +1,13 @@
 import React from 'react';
 import './skill.css';
 
+
 const Skill = ({skill}) => {
   return (
     <div className="skill">
-      <button className="skill-btn">
-      </button>
+      <div className="skill-icon">
+        <img src={`/img/techStackIcons/${skill}.png`} alt={`${skill} icon`} />
+      </div>
       <p>{skill}</p>
     </div>
   );

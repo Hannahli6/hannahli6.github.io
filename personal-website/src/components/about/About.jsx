@@ -28,6 +28,10 @@ const About = () => {
           </div>
           <div className="skills">
             <Skill skill="REACT"/>
+            <Skill skill="JAVASCRIPT"/>
+            <Skill skill="HTML"/>
+            <Skill skill="CSS"/>
+            <Skill skill="FIGMA"/>
           </div>
         </div>
       </div>
