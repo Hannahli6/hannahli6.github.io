@@ -113,3 +113,9 @@ body {
   width: 90%;
   margin: 100px auto;
 }
+
+@media only screen and (max-width: 768px) {
+  span{
+    font-size: var(--font-size-sm);
+  }
+}

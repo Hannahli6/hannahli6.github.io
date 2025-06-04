@@ -16,22 +16,33 @@ const About = () => {
           <IconSet size="small" />
         </div>
         <div className="description">
-          <span>
-            - 2nd Year Statistics Major At University of British Columbia in
-            Vancouver <br />
-            - I have a passion for web development, data science and
-            art! <br />
-            - I also like to cook and bake on my free time!<br />
-          </span>
+          <ul>
+            <li>
+              <span>
+                2nd Year Statistics Major At University of British Columbia in
+                Vancouver
+              </span>
+            </li>
+            <li>
+              <span>
+                I have a passion for web development, data science and art!
+              </span>
+            </li>
+            <li>
+              <span>I also like to cook and bake on my free time!</span>
+            </li>
+          </ul>
           <div className="skills-title">
             <h4>Skills</h4>
           </div>
           <div className="skills">
-            <Skill skill="REACT"/>
-            <Skill skill="JAVASCRIPT"/>
-            <Skill skill="HTML"/>
-            <Skill skill="CSS"/>
-            <Skill skill="FIGMA"/>
+            <Skill skill="REACT" />
+            <Skill skill="JAVASCRIPT" />
+            <Skill skill="HTML" />
+            <Skill skill="CSS" />
+            <Skill skill="FIGMA" />
+            <Skill skill="NODE.JS" />
+            <Skill skill="R" />
           </div>
         </div>
       </div>

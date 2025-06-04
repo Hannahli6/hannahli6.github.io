@@ -8,11 +8,17 @@
     border: 2px var(--brown) solid;
     box-shadow: 2px 2px 0px var(--brown);
     background-color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.skill-icon:hover{
+   transform: scale(1.1);
+   box-shadow: 4px 4px 0px var(--deepPink);
 }
 
 .skill-icon img{
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     object-fit: fit;
 }
 
