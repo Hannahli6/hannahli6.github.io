@@ -1,0 +1,6 @@
+.about{
+    background-color: red;
+    display: flex;
+    position: relative;
+    width: 100%;
+}

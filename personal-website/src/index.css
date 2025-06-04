@@ -1,20 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root {
+  --white: #ffffff;
+  --deepPink: #F9938E;
+  --lightPink: #FFE0DD;
+  --deepYellow: #FBCD9C;
+  --yellow: #FFDFB0;
+  --blue: #A8D4F3;
+  --deepBlue: #207BBC;
+  --brown: #5F4253;
+  --red: #F9938E;
+  --deepRed: #E96F6A;
+  --purple: #DEE3FF;
+  --deepPurple: #6D7EDF;
+  --lightGray: #D8CFCF;
+
+  --font-size-xs: 0.75rem;  /* 12px */
+  --font-size-sm: 1rem;     /* 16px */
+  --font-size-md: 1.25rem;  /* 20px */
+  --font-size-lg: 1.5rem;   /* 24px */
+  --font-size-xl: 2rem;     /* 32px */
+  --font-size-xxl: 4rem;    /* 64px */
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Pixelify Sans", sans-serif; */
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   
 }
 
+h1 {
+  font-size: var(--font-size-xxl); /* 64px */
+  color: var(--white);
+  text-shadow: 4px 4px 0px var(--brown);
+  -webkit-text-stroke: 4px var(--brown);
+  paint-order: stroke fill;
+}
+
+h2 {
+  font-size: var(--font-size-xl);  /* 32px */
+  color: var(--white);
+  text-shadow: 3px 3px 0px var(--brown);
+  -webkit-text-stroke: 3px var(--brown);
+  paint-order: stroke fill;
+}
+
+h3 {
+  font-size: var(--font-size-lg);  /* 24px */
+  color: var(--white);
+  text-shadow: 2px 2px 0px var(--brown);
+  -webkit-text-stroke: 4px var(--brown);
+  paint-order: stroke fill;
+}
+
+h4 {
+  font-size: var(--font-size-md);  /* 20px */
+  color: var(--white);
+  text-shadow: 2px 2px 0px var(--brown);
+  -webkit-text-stroke: 2px var(--brown);
+  paint-order: stroke fill;
+}
+span{
+  font-size: var(--font-size-md);  /* 20px */
+  color: var(--brown);
+}
+h5 {
+  font-size: var(--font-size-sm);  /* 16px */
+  color: var(--white);
+  text-shadow: 4px 4px 0px var(--brown);
+  -webkit-text-stroke: 4px var(--brown);
+  paint-order: stroke fill;
+}
+
+p, h6 {
+  font-size: var(--font-size-xs);  /* 12px */
+  color: var(--white);
+  text-shadow: 1px 1px 0px var(--brown);
+  -webkit-text-stroke: 2px var(--brown);
+  paint-order: stroke fill;
+}
+
+button{
+  background-color: transparent;
+  font-size: var(--font-size-sm);  /* 16px */
+  color: var(--white);
+  text-shadow: 2px 2px 0px var(--brown);
+  -webkit-text-stroke: 2px var(--brown);
+  paint-order: stroke fill;
+  border: none;
+  cursor: pointer;
+}
+
 body {
+  background-color: var(--blue);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/img/background.png);
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: overlay;
+  height: 200vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
 }
