@@ -1,6 +1,49 @@
 .about{
-    background-color: red;
-    display: flex;
+    background-color: var(--lightPink);
     position: relative;
     width: 100%;
+    border-radius: 20px;
+    border: 2px var(--brown) solid;
+    box-shadow: 2px 2px 0px var(--brown);
+}
+
+.about-content{
+    padding: 10% 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profile-card img{
+    width: 80%;
+    height: 80%;
+}
+.resume-btn{
+    border: 2px var(--brown) solid;
+    box-shadow: 4px 4px 0px var(--brown);
+    border-radius: 20px;
+    background-color: var(--white);
+    padding: 10px 40px;
+    width: 80%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-title{
+    border: 2px var(--brown) solid;
+    box-shadow: 4px 4px 0px var(--brown);
+    border-radius: 20px;
+    background-color: var(--deepYellow);
+    padding: 10px 40px;
+    width: 30%;
+    text-align: center;
 }

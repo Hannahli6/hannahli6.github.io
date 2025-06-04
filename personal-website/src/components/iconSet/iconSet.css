@@ -20,6 +20,16 @@
     background-color: var(--white);
 }
 
+.iconSet.small{
+    gap: 20px;
+}
+
+.iconSet.small button{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+}
+
 .iconSet button:hover{
     background-color: var(--deepPink);
     color: var(--white);
