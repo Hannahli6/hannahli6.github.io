@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import IconSet from "../iconSet/IconSet";
+import Skill from "../skill/Skill";
 
 const About = () => {
   return (
@@ -25,7 +26,9 @@ const About = () => {
           <div className="skills-title">
             <h4>Skills</h4>
           </div>
-          <div className="skills"></div>
+          <div className="skills">
+            <Skill skill="REACT"/>
+          </div>
         </div>
       </div>
     </div>
