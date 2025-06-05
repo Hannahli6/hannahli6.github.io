@@ -3,11 +3,13 @@ import "./about.css";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import IconSet from "../iconSet/IconSet";
 import Skill from "../skill/Skill";
+import DecorDots from "../decorDots/DecorDots";
 
 const About = () => {
   return (
     <div className="about">
       <SectionTitle section="About Me" />
+      <DecorDots colour="deepPink" />
       <div className="about-content">
         <div className="profile-card">
           <img src="/img/profileCircle.png"></img>
@@ -35,14 +37,17 @@ const About = () => {
           <div className="skills-title">
             <h4>Skills</h4>
           </div>
-          <div className="skills">
-            <Skill skill="REACT" />
-            <Skill skill="JAVASCRIPT" />
-            <Skill skill="HTML" />
-            <Skill skill="CSS" />
-            <Skill skill="FIGMA" />
-            <Skill skill="NODE.JS" />
-            <Skill skill="R" />
+          <div className="skills-wrapper">
+            <DecorDots colour="orange" />
+            <div className="skills">
+              <Skill skill="REACT" />
+              <Skill skill="JAVASCRIPT" />
+              <Skill skill="HTML" />
+              <Skill skill="CSS" />
+              <Skill skill="FIGMA" />
+              <Skill skill="NODE.JS" />
+              <Skill skill="R" />
+            </div>
           </div>
         </div>
       </div>
