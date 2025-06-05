@@ -15,3 +15,13 @@
     justify-content: center;
     top: -40px;
 }
+
+@media only screen and (max-width: 425px) {
+    .sectionTitle{
+        padding: 10px 30px;
+        font-size: var(--font-size-);  /* 16px */
+    }
+    .sectionTitleWrapper{
+        top: -30px;
+    }
+  }
