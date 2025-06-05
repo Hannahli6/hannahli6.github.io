@@ -38,7 +38,6 @@ const About = () => {
             <h4>Skills</h4>
           </div>
           <div className="skills-wrapper">
-            <DecorDots colour="orange" />
             <div className="skills">
               <Skill skill="REACT" />
               <Skill skill="JAVASCRIPT" />
@@ -48,6 +47,7 @@ const About = () => {
               <Skill skill="NODE.JS" />
               <Skill skill="R" />
             </div>
+            <DecorDots colour="orange" />
           </div>
         </div>
       </div>
