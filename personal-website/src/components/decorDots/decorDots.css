@@ -1,37 +1,36 @@
 .dot{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 2px solid var(--brown);
     position: absolute;
+    padding: inherit;
 }
 
 .decorDots{
     width: 100%;
     height: 100%;
-    position: absolute;
+    inset: 9;
+    position: absolute  ;
 }
 
-.decorDots .topLeft{
-    top: 5%;
-    left: 5%;
-    
-}
-
-.decorDots .topRight{
-    top: 5%;
-    right: 5%;
-}
-
-.decorDots .botLeft{
-    bottom: 5%;
-    left: 5%;
-}
-
-.decorDots .botRight{
-    bottom: 5%;
-    right: 5%;
-}
+.topLeft {
+    top: 1rem;
+    left: 1rem;
+  }
+  .topRight {
+    top: 1rem;
+    right: 1rem;
+  }
+  .botLeft {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .botRight {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
 
 @media only screen and (max-width: 425px) {
     .decorDots .botLeft,
@@ -43,6 +42,6 @@
     .decorDots .topRight{
         width: 15px;
         height: 15px;
-        top: 2%;
+        top: 0.75rem;
     }
 }

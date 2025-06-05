@@ -70,6 +70,13 @@
   justify-content: space-between;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .skills{
+    padding: 8% 12%;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .about-content {
     flex-direction: column;
@@ -88,6 +95,15 @@
 
     .skills-title {
       margin-bottom: -15px;
+    }
+
+    .skills{
+      padding: 15%;
+    }
+
+    .decorDots .botLeft,
+    .decorDots .botRight{
+        display: block;
     }
   }
 }
