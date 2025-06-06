@@ -12,7 +12,10 @@ const About = () => {
       <DecorDots colour="deepPink" />
       <div className="about-content">
         <div className="profile-card">
-          <img src="/img/profileCircle.png"></img>
+          <div className="profile">
+            <img src="/img/profile.png" className="profile" alt="Profile" />
+            <img src="/img/profileCircle.png" className="profile-bg" />
+          </div>
           <h2>Hannah Li</h2>
           <button className="resume-btn">Resume</button>
           <IconSet size="small" />

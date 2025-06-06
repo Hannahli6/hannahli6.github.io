@@ -21,9 +21,23 @@
   gap: 20px;
   flex: 1;
 }
-.profile-card img {
-  width: 70%;
+
+.profile{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.profile .profile {
+  position: absolute;
+  width: 85%;
+}
+
+.profile .profile-bg{
+  width: 100%;
+}
+
 .resume-btn {
   border: 2px var(--brown) solid;
   box-shadow: 4px 4px 0px var(--brown);
