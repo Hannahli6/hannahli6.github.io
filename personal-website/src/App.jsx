@@ -13,8 +13,8 @@ function App() {
       <Landing />
       <div className='main'>
         <About />
-        <Experience />
         <Project />
+        <Experience />
         <Hobby />
       </div>
     </div>

@@ -8,7 +8,7 @@ const Skill = ({skill}) => {
       <div className="skill-icon">
         <img src={`/img/techStackIcons/${skill}.png`} alt={`${skill} icon`} />
       </div>
-      <p>{skill}</p>
+      <h6>{skill}</h6>
     </div>
   );
 };
