@@ -3,7 +3,7 @@ import Landing from './components/landing/Landing';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Hobby from './components/hobby/Hobby';
-import Project from './components/projects/Project';
+import Projects from './components/projects/Projects';
 import './index.css';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Landing />
       <div className='main'>
         <About />
-        <Project />
+        <Projects />
         <Experience />
         <Hobby />
       </div>

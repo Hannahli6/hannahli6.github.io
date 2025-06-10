@@ -1,31 +1,66 @@
 import React from "react";
+import { Link } from "lucide-react";
 import "./projectCard.css";
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  title,
+  desc,
+  imageLink,
+  skillTags,
+  githubLink,
+  websiteLink,
+  devpostLink,
+}) => {
+  const stopPropagation = (e) => {
+    e.stopPropagation();
+  };
+
   return (
-    <div className="projectCard">
-      <img src="/img/EmbrProject.png" className="project-image"></img>
+    <div
+      className="projectCard"
+      onClick={() => {
+        window.open("http://google.com", "_blank");
+      }}
+    >
+      <img
+        src={`/img/projectImage/${imageLink}`}
+        className="project-image"
+      ></img>
+      <h4 className="project-title">{title}</h4>
       <div className="project-info">
-        <h4 className="project-title">Embr NWHACKS 2025</h4>
-        <p>
-          Real-time global wildfire tracking platform with interactive map, air
-          quality alerts, and displayed news related to the local wildfire,
-          Integrated GPT-4o to generate nearby shelters and hospitals, and a
-          HuggingFace LLM chatbot for user guidance assistance
-        </p>
+        <p>{desc}</p>
         <div className="skillTags">
-          <span className="skillTag">React</span>
-          <span className="skillTag">Javascript</span>
+          {skillTags.map((tag, index) => (
+            <h5 className="skillTag" key={index}>
+              {tag}
+            </h5>
+          ))}
         </div>
         <div className="projectLinks">
-          <div className="projectLink">
-            {/* link icon */}
-            <a href="">Github</a>
-          </div>
-          <div className="projectLink">
-            {/* link icon */}
-            <a href="">Website</a>
-          </div>
+          {githubLink && (
+            <div className="projectLink" onClick={stopPropagation}>
+              <Link size={16} strokeWidth={3} />
+              <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          )}
+          {devpostLink && (
+            <div className="projectLink" onClick={stopPropagation}>
+              <Link size={16} strokeWidth={3} />
+              <a href={devpostLink} target="_blank" rel="noopener noreferrer">
+                Devpost
+              </a>
+            </div>
+          )}
+          {websiteLink && (
+            <div className="projectLink" onClick={stopPropagation}>
+              <Link size={16} strokeWidth={3} />
+              <a href={websiteLink} target="_blank" rel="noopener noreferrer">
+                Website
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

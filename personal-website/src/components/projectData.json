@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Embr NwHacks 2025",
+    "desc": "Real-time global wildfire tracking platform with interactive map, air quality alerts, and displayed news related to the local wildfire. Integrated GPT-4o to generate nearby shelters and hospitals, and a HuggingFace LLM chatbot for user guidance assistance.",
+    "imageLink": "EmbrProject.png",
+    "skillTags": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "APIs",
+      "Node.js",
+      "Express.js"
+    ],
+    "githubLink": "https://github.com/your-username/embr-nwhacks",
+    "websiteLink": null,
+    "devpostLink": "https://devpost.com/software/embr-nwhacks-2025"
+  },
+  {
+    "title": "Personal Finance & Expense Tracker",
+    "desc": "Java desktop app to track income, expenses, and budgeting. Features include entry via categorized JList, overspending alerts, data visualizations, and full CRUD support for all financial items.",
+    "imageLink": "EmbrProject.png",
+    "skillTags": [
+      "Java",
+      "Swing",
+      "Object-Oriented Design",
+      "Data Visualization"
+    ],
+    "githubLink": "https://github.com/your-username/expense-tracker",
+    "websiteLink": "",
+    "devpostLink": ""
+  }
+]
