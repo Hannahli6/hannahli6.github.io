@@ -7,7 +7,7 @@ import DecorDots from "../decorDots/DecorDots";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about section-bg">
       <SectionTitle section="About Me" />
       <DecorDots colour="deepPink" />
       <div className="about-content">

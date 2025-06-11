@@ -7,7 +7,7 @@ import projects from "../projectData.json";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects section-bg">
       <SectionTitle section="Projects" />
       <DecorDots colour={"deepRed"} />
       <div className="projects-content">

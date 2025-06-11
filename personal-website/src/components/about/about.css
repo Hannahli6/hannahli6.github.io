@@ -1,9 +1,5 @@
 .about {
   background-color: var(--lightPink);
-  position: relative;
-  width: 100%;
-  border-radius: 20px;
-  border: 2px var(--brown) solid;
   box-shadow: 2px 2px 0px var(--brown);
 }
 

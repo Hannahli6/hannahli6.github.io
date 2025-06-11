@@ -9,7 +9,7 @@ const Hobby = () => {
   const placeholderImgURLYellow = "https://loading.io/assets/mod/spinner/cutiefox/lg.gif"; 
   const placeholderImgURLBlue = "https://loading.io/assets/mod/spinner/bluecat/lg.gif"; 
   return (
-    <div className="hobby">
+    <div className="hobby section-bg">
       <SectionTitle section="Hobbies & Art" />
       <DecorDots colour={"deepPurple"} />
       <div

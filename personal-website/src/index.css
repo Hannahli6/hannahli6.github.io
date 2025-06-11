@@ -11,6 +11,7 @@
   --brown: #5F4253;
   --red: #F9938E;
   --deepRed: #E96F6A;
+  --brightRed: #E96F6A;
   --purple: #DEE3FF;
   --deepPurple: #6D7EDF;
   --lightGray: #D8CFCF;
@@ -141,6 +142,17 @@ a::after {
 
 a:hover::after {
 width: 80%;
+}
+
+.section-bg{
+  background-color: var(--red);
+  width: 100%;
+  border-radius: 20px;
+  border: 3px var(--brown) solid;
+  box-shadow: 14px 14px 0px var(--brightRed);
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
