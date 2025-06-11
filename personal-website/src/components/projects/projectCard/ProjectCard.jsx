@@ -19,7 +19,7 @@ const ProjectCard = ({
     <div
       className="projectCard"
       onClick={() => {
-        window.open("http://google.com", "_blank");
+        window.open(githubLink, "_blank");
       }}
     >
       <img

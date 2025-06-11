@@ -1,0 +1,27 @@
+.hobby {
+  background-color: var(--purple);
+  width: 100%;
+  border-radius: 20px;
+  border: 2px var(--brown) solid;
+  box-shadow: 2px 2px 0px var(--deepPurple);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.artEmbeds {
+  width: 100%;
+  padding: 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+    min-width: 100% !important
+}

@@ -23,6 +23,7 @@ const Projects = () => {
             devpostLink={project.devpostLink}
           />
         ))}
+        
       </div>
     </div>
   );
