@@ -16,7 +16,7 @@ const About = () => {
             <img src="/img/profile.png" className="profile" alt="Profile" />
             <img src="/img/profileCircle.png" className="profile-bg" />
           </div>
-          <h2>Hannah Li</h2>
+          <h3>Hannah Li</h3>
           <a
             className="resume-btn"
             href="/resume.pdf"
@@ -30,20 +30,20 @@ const About = () => {
         <div className="description">
           <ul className="no-border-style">
             <li>
-              <h4 className="no-border-style">
+              <h5 className="no-border-style">
                 2nd Year Statistics Major At University of British Columbia in
                 Vancouver
-              </h4>
+              </h5>
             </li>
             <li>
-              <h4 className="no-border-style">
+              <h5 className="no-border-style">
                 I have a passion for web development, data science and art!
-              </h4>
+              </h5>
             </li>
             <li>
-              <h4 className="no-border-style">
+              <h5 className="no-border-style">
                 I also like to cook and bake on my free time!
-              </h4>
+              </h5>
             </li>
           </ul>
           <div className="skills-title">

@@ -33,9 +33,9 @@ const ProjectCard = ({
         <p>{desc}</p>
         <div className="skillTags ">
           {skillTags.map((tag, index) => (
-            <h5 className="skillTag no-border-style" key={index}>
+            <h6 className="skillTag no-border-style" key={index}>
               {tag}
-            </h5>
+            </h6>
           ))}
         </div>
         <div className="projectLinks">
