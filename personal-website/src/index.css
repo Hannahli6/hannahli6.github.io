@@ -23,6 +23,10 @@
   --font-size-xl: 2rem;     /* 32px */
   --font-size-xxl: 4rem;    /* 64px */
 }
+
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -154,6 +158,44 @@ width: 80%;
   justify-content: center;
   position: relative;
 }
+
+.top-footer{
+  width: 100%;
+  background-color: var(--lightPink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0 60px 0;
+  gap: 15px;
+  position: relative;
+}
+
+.scroll-to-top-img{
+  position: absolute;
+  top: -55px;
+}
+.scroll-to-top-img::after{
+  background-color: var(--deepPink);
+}
+
+.scroll-to-top-img img{
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-footer img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.bot-footer{
+  width: 100%;
+  height: 60px;
+  background-color: var(--deepPink);
+}
+
+
 
 @media only screen and (max-width: 768px) {
   h4{

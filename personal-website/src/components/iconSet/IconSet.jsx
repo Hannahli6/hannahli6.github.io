@@ -5,8 +5,9 @@ import { MdEmail } from "react-icons/md";
 import socialMediaLinks from "../socialMediaLinks.json"
 
 const IconSet = ({size}) => {
+  // Default size if not provided
   return (
-    <div className={`iconSet ${size}`}>
+    <div className={`iconSet ${size ? size : ''}`}>
       <a href={socialMediaLinks.github} target="_blank" rel="noopener noreferrer"><FaGithub/></a>
       <a href={socialMediaLinks.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
       <a href={`mailto:${socialMediaLinks.email}`}><MdEmail/></a>
