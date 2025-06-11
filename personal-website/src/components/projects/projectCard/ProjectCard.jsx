@@ -19,19 +19,21 @@ const ProjectCard = ({
     <div
       className="projectCard"
       onClick={() => {
-        window.open(githubLink, "_blank");
+        window.open(websiteLink ? websiteLink : githubLink, "_blank");
       }}
     >
-      <img
-        src={`/img/projectImage/${imageLink}`}
-        className="project-image"
-      ></img>
-      <h4 className="project-title">{title}</h4>
+      <div className="project-image-wrapper">
+        <img
+          src={`/img/projectImage/${imageLink}`}
+          className="project-image"
+        ></img>
+      </div>
+      <h4 className="project-title no-border-style">{title}</h4>
       <div className="project-info">
         <p>{desc}</p>
-        <div className="skillTags">
+        <div className="skillTags ">
           {skillTags.map((tag, index) => (
-            <h5 className="skillTag" key={index}>
+            <h5 className="skillTag no-border-style" key={index}>
               {tag}
             </h5>
           ))}

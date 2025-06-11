@@ -17,24 +17,26 @@ const About = () => {
             <img src="/img/profileCircle.png" className="profile-bg" />
           </div>
           <h2>Hannah Li</h2>
-          <button className="resume-btn">Resume</button>
+          <a className="resume-btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+           <h4>Resume</h4>
+          </a>
           <IconSet size="small" />
         </div>
         <div className="description">
-          <ul>
+          <ul className="no-border-style">
             <li>
-              <span>
+              <h4 className="no-border-style">
                 2nd Year Statistics Major At University of British Columbia in
                 Vancouver
-              </span>
+              </h4>
             </li>
             <li>
-              <span>
+              <h4 className="no-border-style">
                 I have a passion for web development, data science and art!
-              </span>
+              </h4>
             </li>
             <li>
-              <span>I also like to cook and bake on my free time!</span>
+              <h4 className="no-border-style">I also like to cook and bake on my free time!</h4>
             </li>
           </ul>
           <div className="skills-title">

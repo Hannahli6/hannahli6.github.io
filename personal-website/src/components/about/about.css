@@ -45,6 +45,9 @@
   background-color: var(--white);
   padding: 10px 40px;
   width: 80%;
+  color: var(--brown);
+  text-decoration: none;
+  text-align: center;
 }
 .description {
   flex: 2;
@@ -84,6 +87,7 @@
   justify-content: space-between;
   z-index: 3;
 }
+
 
 
 @media only screen and (max-width: 768px) {
