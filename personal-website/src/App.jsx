@@ -37,7 +37,7 @@ function App() {
             className="scroll-to-top-img"
             to="navbar"
             smooth={true}
-            duration={100}
+            duration={300}
           >
             <img src="/img/bunny.png"></img>
           </Link>

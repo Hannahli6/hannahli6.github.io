@@ -17,8 +17,13 @@ const About = () => {
             <img src="/img/profileCircle.png" className="profile-bg" />
           </div>
           <h2>Hannah Li</h2>
-          <a className="resume-btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-           <h4>Resume</h4>
+          <a
+            className="resume-btn"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4>Resume</h4>
           </a>
           <IconSet size="small" />
         </div>
@@ -36,7 +41,9 @@ const About = () => {
               </h4>
             </li>
             <li>
-              <h4 className="no-border-style">I also like to cook and bake on my free time!</h4>
+              <h4 className="no-border-style">
+                I also like to cook and bake on my free time!
+              </h4>
             </li>
           </ul>
           <div className="skills-title">

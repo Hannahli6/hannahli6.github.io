@@ -11,16 +11,16 @@ const Navbar = () => {
     <div className="navbar">
       <img src='./img/profileCircle.png' alt="Profile"></img>
       <div className={`page-links menu ${toggle ? 'active' : ''}`}>
-        <Link to="aboutMe" smooth={true} duration={100} offset={-100} >
+        <Link to="aboutMe" smooth={'easeInOutQuad'} duration={500} offset={-100}>
           <button>About me</button>
         </Link>
-        <Link to="experience" smooth={true} duration={100} offset={-100}>
+        <Link to="experience" smooth={'easeInOutQuad'} duration={500} offset={-100}>
           <button>Experience</button>
         </Link>
-        <Link to="projects" smooth={true} duration={100} offset={-100}>
+        <Link to="projects" smooth={'easeInOutQuad'} duration={500} offset={-100}>
           <button>Projects</button>
         </Link>
-        <Link to="hobbyArt" smooth={true} duration={100} offset={-100}>
+        <Link to="hobbyArt" smooth={'easeInOutQuad'} duration={500} offset={-100}>
           <button>Hobby & Art</button>
         </Link>
       </div>

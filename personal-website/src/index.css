@@ -94,6 +94,7 @@ p {
   -webkit-text-stroke: 0px !important;
   box-shadow: none !important;
   text-shadow: none !important;
+  paint-order: normal !important;
 }
 
 button{
