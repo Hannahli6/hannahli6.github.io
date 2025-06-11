@@ -11,9 +11,7 @@ import { Link, Element } from "react-scroll";
 function App() {
   return (
     <div className="App">
-          <Navbar />
-      <Element className="navbar-wrapper" name="navbar">
-      </Element>
+      <Navbar />
       <Element name="landing">
         <Landing />
       </Element>
@@ -27,17 +25,19 @@ function App() {
         <Element name="experience">
           <Experience />
         </Element>
-        {/* <Element name="hobbyArt">
+        <Element name="hobbyArt">
           <Hobby />
-        </Element> */}
+        </Element>
       </div>
       <footer className="footer">
         <div className="top-footer">
           <Link
             className="scroll-to-top-img"
-            to="navbar"
+            to="landing"
             smooth={true}
             duration={300}
+            offset={-80}
+            // 80px is the height of the navbar
           >
             <img src="/img/bunny.png"></img>
           </Link>
@@ -45,7 +45,7 @@ function App() {
           <div className="footer-text">
             <h5 className="no-border-style">© 2025 hannahli6.github.io</h5>
             <h5 className="no-border-style">Connect With Me!</h5>
-          </div> 
+          </div>
         </div>
         <div className="bot-footer"></div>
       </footer>

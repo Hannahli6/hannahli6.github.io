@@ -18,7 +18,8 @@ const Navbar = () => {
   useEffect(() => {
     // Set navbar height after mount
     if (navbarRef.current) {
-      setNavbarHeight(navbarRef.current.offsetHeight);
+      setNavbarHeight(navbarRef.current.offsetHeight + 100);
+      // 100px for extra buffer
     }
 
     const handleScroll = () => {
