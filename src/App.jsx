@@ -7,15 +7,12 @@ import Projects from "./components/projects/Projects";
 import "./index.css";
 import IconSet from "./components/iconSet/IconSet";
 import { Link, Element } from "react-scroll";
-import bunny from "./bunny.png"
 
 function App() {
   return (
     <div className="App">
       <Element name="navbar">
         <Navbar />
-        <img src={bunny}></img>
-        <img src="/personal-website/bunny1.png" className="bunny-img" alt="Bunny" />
       </Element>
       <Element name="landing">
         <Landing />
