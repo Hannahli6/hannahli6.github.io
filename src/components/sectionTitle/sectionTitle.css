@@ -1,0 +1,27 @@
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+    border: 2px var(--brown) solid;
+    box-shadow: 2px 2px 0px var(--brown);
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px 60px
+}
+
+.sectionTitleWrapper{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -40px;
+}
+
+@media only screen and (max-width: 430px) {
+    .sectionTitle{
+        padding: 10px 30px;
+        font-size: var(--font-size-);  /* 16px */
+    }
+    .sectionTitleWrapper{
+        top: -30px;
+    }
+  }

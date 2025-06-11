@@ -1,0 +1,93 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--deepPink);
+    align-items: center;
+    padding: 20px 10%;
+    max-height: 80px;
+
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+.page-links{
+    display: flex ;
+    gap: 70px;
+}
+
+button{
+    position: relative;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--white);
+    transition: width 0.3s ease;
+}
+  
+button:hover::after {
+width: 80%;
+}
+
+.menuBar{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        padding: 1.8rem 2.2rem;
+        background-color: var(--deepPink);
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .menu{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        top: -500%;
+        left: 0%;
+        width: 100%;
+        background-color: var(--white);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 3.75rem 0;
+        transition: 0.3s;
+        z-index: 2;
+        box-shadow: 0px 6px 0px var(--lightGray);
+        border: 2px solid var(--brown);
+    }
+
+    .menu.active{
+       top: 80px;
+    }
+
+    button::after {
+        background-color: var(--deepPink);
+    }
+
+    .menuBar{
+        display: block;
+    }
+
+    img{
+       display: block;
+    }
+    
+}
+

@@ -1,0 +1,39 @@
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--brown);
+    position: absolute;
+}
+
+.topLeft {
+    top: 1rem;
+    left: 1rem;
+  }
+  .topRight {
+    top: 1rem;
+    right: 1rem;
+  }
+  .botLeft {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .botRight {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+
+@media only screen and (max-width: 430px) {
+    .decorDots .botLeft,
+    .decorDots .botRight{
+        display: none;
+    }
+
+    .decorDots .topLeft,
+    .decorDots .topRight{
+        width: 15px;
+        height: 15px;
+        top: 0.75rem;
+    }
+}

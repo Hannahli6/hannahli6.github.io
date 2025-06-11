@@ -1,0 +1,14 @@
+.projects {
+  background-color: var(--red);
+  box-shadow: 8px 8px 0px var(--brightRed);
+}
+
+.projects-content {
+  width: 100%;
+  padding: 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
