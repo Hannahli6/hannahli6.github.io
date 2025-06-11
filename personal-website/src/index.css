@@ -120,7 +120,9 @@ body {
   margin: 100px auto;
   gap: 100px;
 }
-
+a{
+  position: relative;
+}
 a::after {
   content: '';
   position: absolute;
