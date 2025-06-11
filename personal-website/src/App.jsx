@@ -14,21 +14,38 @@ function App() {
       <Element name="navbar">
         <Navbar />
       </Element>
-      <Landing />
+      <Element name="landing">
+        <Landing />
+      </Element>
       <div className="main">
-        <About />
-        <Projects />
-        <Experience />
-        {/* <Hobby /> */}
+        <Element name="aboutMe">
+          <About />
+        </Element>
+        <Element name="projects">
+          <Projects />
+        </Element>
+        <Element name="experience">
+          <Experience />
+        </Element>
+        <Element name="hobbyArt">
+          <Hobby />
+        </Element>
       </div>
       <footer className="footer">
         <div className="top-footer">
-          <Link className="scroll-to-top-img" to="navbar" smooth={true} duration={100}>
+          <Link
+            className="scroll-to-top-img"
+            to="navbar"
+            smooth={true}
+            duration={100}
+          >
             <img src="/img/bunny.png"></img>
           </Link>
           <IconSet size={""} />
-          <h5 className="no-border-style">© 2025 hannahli6.github.io</h5>
-          <h5 className="no-border-style">Connect With Me!</h5>
+          <div className="footer-text">
+            <h5 className="no-border-style">© 2025 hannahli6.github.io</h5>
+            <h5 className="no-border-style">Connect With Me!</h5>
+          </div> 
         </div>
         <div className="bot-footer"></div>
       </footer>

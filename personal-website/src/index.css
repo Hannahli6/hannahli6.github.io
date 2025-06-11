@@ -126,8 +126,8 @@ body {
   flex-direction: column;
   max-width: 1000px;
   width: 90%;
-  margin: 100px auto;
-  gap: 100px;
+  margin: 200px auto;
+  gap: 150px;
 }
 a{
   position: relative;
@@ -166,9 +166,13 @@ width: 80%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 0 60px 0;
+  padding: 70px 0 30px 0;
   gap: 15px;
   position: relative;
+}
+
+.footer-text{
+  text-align: center;
 }
 
 .scroll-to-top-img{

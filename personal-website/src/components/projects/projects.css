@@ -1,6 +1,6 @@
 .projects {
   background-color: var(--red);
-  box-shadow: 14px 14px 0px var(--brightRed);
+  box-shadow: 8px 8px 0px var(--brightRed);
 }
 
 .projects-content {
