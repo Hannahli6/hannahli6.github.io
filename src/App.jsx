@@ -11,8 +11,8 @@ import { Link, Element } from "react-scroll";
 function App() {
   return (
     <div className="App">
-      <Element name="navbar">
-        <Navbar />
+          <Navbar />
+      <Element className="navbar-wrapper" name="navbar">
       </Element>
       <Element name="landing">
         <Landing />
@@ -27,9 +27,9 @@ function App() {
         <Element name="experience">
           <Experience />
         </Element>
-        <Element name="hobbyArt">
+        {/* <Element name="hobbyArt">
           <Hobby />
-        </Element>
+        </Element> */}
       </div>
       <footer className="footer">
         <div className="top-footer">
