@@ -2,14 +2,48 @@
   display: flex;
   gap: 20px;
   justify-content: center;
+  transition: transform 0.3s ease-in-out;
 
-  .skill-icon{
-  width: 40px;
-  height: 40px;
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+  li {
+    font-size: 14px;
+    color: var(--brown);
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--deepBlue);
+  }
+  .link a {
+    display: inline-block;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* link overflow so hover:after will not work */
+    /* solution: ::after on parent container (.link) */
+    white-space: nowrap;
+    vertical-align: bottom;
+  }
+  .link::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--deepBlue);
+    transition: width 0.3s ease;
+  }
+  .link:hover::after {
+    width: 100px;
+  }
 }
-
-}
-.work-duration{
+.work-duration {
   position: relative;
   background-color: var(--lightBlue);
   color: var(--white);
@@ -25,19 +59,18 @@
   text-align: center;
   white-space: nowrap;
 }
-.work-details{
+.work-details {
   position: relative;
   background-color: var(--white);
   padding: 4% 8%;
-  border-radius: 20px;  
+  border-radius: 20px;
   box-shadow: 6px 6px 0px var(--deepBlue);
   border: 3px solid var(--deepBlue);
   gap: 10px;
   display: flex;
   flex-direction: column;
-
 }
-.experience-title-wrapper{
+.experience-title-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -60,10 +93,9 @@
   margin-left: 10px;
   vertical-align: middle;
   border-radius: 2px;
-
 }
 
-.work-type-tag{
+.work-type-tag {
   position: absolute;
   top: -20px;
   left: 30px;
@@ -74,7 +106,11 @@
   box-shadow: 2px 2px 0px var(--deepBlue);
 }
 
-
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 @media (max-width: 700px) {
   .experience-card {
@@ -91,7 +127,7 @@
     padding-top: 12%;
     padding-bottom: 8%;
   }
-  .experience-title{
+  .experience-title {
     white-space: wrap;
     min-width: 160px;
   }

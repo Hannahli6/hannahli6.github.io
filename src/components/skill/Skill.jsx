@@ -1,13 +1,14 @@
-import React from 'react';
-import './skill.css';
+import React from "react";
+import "./skill.css";
 
+const Skill = ({ skill }) => {
+  // make skill name CSP to clip studio paint
+  const skillImgLink = `/img/techStackIcons/${skill}.png`;
 
-
-const Skill = ({skill}) => {
   return (
     <div className="skill">
       <div className="skill-icon">
-        <img src={`/img/techStackIcons/${skill}.png`} alt={`${skill} icon`} />
+        <img src={skillImgLink} alt={`${skill} icon`} />
       </div>
       <h6>{skill}</h6>
     </div>

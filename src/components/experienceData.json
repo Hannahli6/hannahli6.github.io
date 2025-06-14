@@ -1,0 +1,44 @@
+[
+  {
+    "company": "Youth Helping Youth Organization",
+    "role": "Web Developer",
+    "workType": "Volunteer Experience",
+    "startDate": "2022-08",
+    "endDate": "2023-03",
+    "description": [
+      "Volunteered and hosted the 'Youthhacks2023' hackathon as part of the tech team.",
+      "Created a dedicated event website using JavaScript and HTML to feature registration info, FAQs, and organizational details.",
+      "Collaborated with team members in weekly meetings to plan and implement the website's design and functionality."
+    ],
+    "links": ["https://youthelpingyouthbc.github.io/youthelpingyouthbc"],
+    "skills": ["JAVASCRIPT", "HTML", "CSS"]
+  },
+  {
+    "company": "Trout Lake Community Center",
+    "role": "Badminton Coach",
+    "workType": "Work Experience",
+    "startDate": "2022-09",
+    "endDate": "2022-12",
+    "description": [
+      "Led a weekly badminton class for 12 students aged 7–12, developing 14 lesson plans focused on drills and interactive games.",
+      "Demonstrated badminton techniques and strategies to improve student performance.",
+      "Provided individual feedback and created a fun, supportive environment for learning."
+    ],
+    "links": ["https://www.troutlakecc.com"],
+    "skills": []
+  },
+  {
+  "company": "IG : @artnhannah",
+  "role": "Freelance Digital Illustrator",
+  "workType": "Work Experience",
+  "startDate": "2020-08",
+  "endDate": "2022-03",
+  "description": [
+    "Created personalized digital illustrations using Clip Studio Paint, including stylized portraits and anime-inspired fabric patterns",
+    "Communicated with clients to clarify requirements, provided progress updates, and delivered finalized artwork on time.",
+    "Managed and fulfilled over 10 international commissions, handling PayPal transactions and logistics."
+  ],
+    "links": ["https://instagram.com/artnhannah", "https://artnhannah.carrd.co"],
+    "skills": ["CSP"]
+    }
+]

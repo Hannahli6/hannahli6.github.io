@@ -40,7 +40,7 @@ const ProjectCard = ({
         </div>
         <div className="projectLinks">
           {githubLink && (
-            <div className="projectLink" onClick={stopPropagation}>
+            <div className="link" onClick={stopPropagation}>
               <Link size={16} strokeWidth={3} />
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 GitHub
@@ -48,7 +48,7 @@ const ProjectCard = ({
             </div>
           )}
           {devpostLink && (
-            <div className="projectLink" onClick={stopPropagation}>
+            <div className="link" onClick={stopPropagation}>
               <Link size={16} strokeWidth={3} />
               <a href={devpostLink} target="_blank" rel="noopener noreferrer">
                 Devpost
@@ -56,7 +56,7 @@ const ProjectCard = ({
             </div>
           )}
           {websiteLink && (
-            <div className="projectLink" onClick={stopPropagation}>
+            <div className="link" onClick={stopPropagation}>
               <Link size={16} strokeWidth={3} />
               <a href={websiteLink} target="_blank" rel="noopener noreferrer">
                 Website

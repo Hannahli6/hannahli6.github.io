@@ -101,14 +101,14 @@
   justify-content: center;
 }
 
-.projectLink {
+.link {
   display: flex;
   gap: 5px;
   color: var(--brown);
   z-index: 3;
 }
 
-.projectLink a {
+.link a {
   position: relative;
   color: var(--brown);
   text-decoration: none;
@@ -116,6 +116,6 @@
   font-weight: bold;
 }
 
-.projectLink a:hover::after {
+.link a:hover::after {
   background-color: var(--deepPink);
 }
