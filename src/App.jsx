@@ -7,6 +7,7 @@ import Projects from "./components/projects/Projects";
 import "./index.css";
 import IconSet from "./components/iconSet/IconSet";
 import { Link, Element } from "react-scroll";
+import FadeInAnimation from "./components/FadeInAnimation/FadeInAnimation";
 
 function App() {
   return (
@@ -16,18 +17,26 @@ function App() {
         <Landing />
       </Element>
       <div className="main">
-        <Element name="aboutMe">
-          <About />
-        </Element>
-        <Element name="projects">
-          <Projects />
-        </Element>
-        <Element name="experience">
-          <Experience />
-        </Element>
-        <Element name="hobbyArt">
-          <Hobby />
-        </Element>
+        <FadeInAnimation direction={"left"}>
+          <Element name="aboutMe">
+            <About />
+          </Element>
+        </FadeInAnimation>
+        <FadeInAnimation direction={"right"}>
+          <Element name="projects">
+            <Projects />
+          </Element>
+        </FadeInAnimation>
+        <FadeInAnimation direction={"left"}>
+          <Element name="experience">
+            <Experience />
+          </Element>
+        </FadeInAnimation>
+        <FadeInAnimation direction={"right"}>
+          <Element name="hobbyArt">
+            <Hobby />
+          </Element>
+        </FadeInAnimation>
       </div>
       <footer className="footer">
         <div className="top-footer">

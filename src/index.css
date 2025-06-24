@@ -115,7 +115,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../public/img/background.png);
-
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: overlay;
   height: 200vh;
@@ -167,6 +166,7 @@ width: 80%;
   display: flex;
   justify-content: center;
   position: relative;
+  
 }
 
 .top-footer{
