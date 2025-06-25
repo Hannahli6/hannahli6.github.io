@@ -34,30 +34,35 @@
     "title": "Personal Ecommerce Website",
     "desc": "Created a frontend e-commerce webpage to sell my original digital art, featuring prints and stationery products and prototyped webpages on Figma, including mobile-responsive designs for a better user experience across all devices.",
     "imageLink": "artShop.png",
+    "skillTags": ["HTML", "CSS", "JavaScript", "React"],
+    "githubLink": "https://github.com/Hannahli6/artShop",
+    "websiteLink": "https://glistening-croquembouche-d3a529.netlify.app/",
+    "devpostLink": ""
+  },
+  {
+    "title": "Zero Waste Recipe",
+    "desc": "Inspired by the global issue of food waste, this full-stack app helps users track pantry items and expiry dates, highlighting soon-to-expire foods and suggesting recipes using a third-party API.",
+    "imageLink": "zeroWasteRecipe.png",
     "skillTags": [
       "HTML",
       "CSS",
       "JavaScript",
-      "React"
+      "React",
+      "Node.js",
+      "Express.js",
+      "API"
     ],
-    "githubLink": "https://github.com/Hannahli6/artShop",
-    "websiteLink": "https://glistening-croquembouche-d3a529.netlify.app/",
+    "githubLink": "https://github.com/Hannahli6/Zero-Waste-Recipe-App",
+    "websiteLink": "https://zero-waste-recipe.vercel.app/",
     "devpostLink": ""
   },
   {
     "title": "Pixel Artist",
     "desc": "Built a lightweight, browser-based pixel art editor using HTML, CSS, and JavaScript. Users can customize grid sizes, pick colors, and draw pixel-by-pixel on an intuitive retro-style interface.",
     "imageLink": "pixelArtist.png",
-    "skillTags": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
+    "skillTags": ["HTML", "CSS", "JavaScript"],
     "githubLink": "https://github.com/Hannahli6/pixelArtist",
     "websiteLink": "https://hannahli6.github.io/pixelArtist/",
     "devpostLink": ""
   }
-  
 ]
-
-
