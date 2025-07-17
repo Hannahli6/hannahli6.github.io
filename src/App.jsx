@@ -32,11 +32,11 @@ function App() {
             <Experience />
           </Element>
         </FadeInAnimation>
-        <FadeInAnimation direction={"right"}>
+        {/* <FadeInAnimation direction={"right"}>
           <Element name="hobbyArt">
             <Hobby />
           </Element>
-        </FadeInAnimation>
+        </FadeInAnimation> */}
       </div>
       <footer className="footer">
         <div className="top-footer">

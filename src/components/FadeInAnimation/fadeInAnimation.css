@@ -18,6 +18,12 @@
   transform: translateX(50px);
 }
 
-.fade-in-wrapper{
-  overflow-x: clip; /* Better than hidden */
+
+@media (max-width: 600px) {
+  .left {
+    transform: translateX(-10px);
+  }
+  .right {
+    transform: translateX(10px);
+  }
 }

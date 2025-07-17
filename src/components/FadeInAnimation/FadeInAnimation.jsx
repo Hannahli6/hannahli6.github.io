@@ -10,15 +10,12 @@ const FadeInAnimation = ({ children, direction }) => {
   });
 
   return (
-    <div className="fade-in-wrapper">
-      <div
-        ref={ref}
-        className={`fade-in-animation ${inView ? "is-visible"  : ""} ${direction}`}
-      >
-        {children}
-      </div>
+    <div
+      ref={ref}
+      className={`fade-in-animation ${inView ? "is-visible" : ""} ${direction}`}
+    >
+      {children}
     </div>
-    
   );
 };
 
