@@ -31,7 +31,7 @@ const About = () => {
           <ul className="no-border-style">
             <li>
               <h5 className="no-border-style">
-                2nd Year Statistics Major At University of British Columbia in
+                3rd Year Statistics Major At University of British Columbia in
                 Vancouver
               </h5>
             </li>
